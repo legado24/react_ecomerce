@@ -1,0 +1,129 @@
+.header__search {
+  border-radius: 10px !important;
+  flex-grow: 2;
+  display: flex;
+}
+.header__input-search {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--second-color);
+}
+.header__input-search > input {
+  flex: 2;
+  font-size: 1.2rem;
+  font-family: var(--font-family);
+  outline: none;
+
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+.header__input-search > input::placeholder {
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--gray-color);
+  font-family: var(--font-family);
+}
+.header__icon-search {
+  color: var(--white-color);
+  position: relative;
+  margin: auto;
+  flex: 0.15;
+  justify-content: center;
+}
+
+/* @media screen and (max-width: 1103px) {
+    .header__search {
+        flex: 80;
+        border-radius: 0px !important;
+      }
+
+} */
+
+@media screen and (max-width: 1103px) {
+  .header {
+    display: flex;
+  }
+  .header__search {
+    display: flex;
+    top: 10px;
+    height: 36px;
+    width: 100%;
+    padding-right: 20px;
+    border-radius: 0px !important;
+  }
+  .header__logo {
+    flex-grow: 1;
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+  .header__content {
+    display: flex;
+
+    align-items: center;
+  }
+  .header__search.scroll {
+    top: 85px;
+    transition: all 200ms;
+  }
+  .header__search.scroll-none {
+    top: 60px;
+    transition: all 200ms;
+  }
+  /* .header__search {
+    padding: 20px 10px;
+    height: 85px;
+    border-radius: 5px !important;
+  } */
+  .header__input-search {
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .header__input-search > input {
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  /* .header__search {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0px !important;
+  } */
+  .header {
+    display: flex;
+  }
+  .header__logo {
+    position: absolute;
+    left: 0;
+    padding-left: 30px;
+  }
+
+  .header__search {
+    display: flex;
+    padding: 1rem 0;
+    height: calc(var(--height-header)+2.5rem);
+    /* order: 4; */
+    border-radius: 0px;
+    width: 100%;
+    position: fixed;
+    top: 160px;
+    border: none;
+    padding:20px 5px;
+  }
+
+  .header__input-search {
+    height: calc(var(--height-header)+2.5rem);
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .header__input-search > input {
+    height: calc(var(--height-header)+2.5rem);
+    border-radius: 5px;
+    padding: 5px;
+  }
+}

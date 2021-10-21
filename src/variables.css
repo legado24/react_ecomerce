@@ -1,0 +1,17 @@
+ 
+  :root {
+    --first-color: #1FA02E;
+    --second-color:#177622;
+    --border-button:#A4C735;
+    --background-menu:#238538;
+    --white-color: #FFFFFF;
+    --gray-light-color: #F0F0F0;
+    --background-menu-movil:#F4F4F4;
+    --border-line-color:#D8D8D8;
+    --gray-color: #999999;
+    --black-color: #000000;
+    --black-color-secondary:#333333;
+    --height-header: 4.5rem;
+    --font-family:sans-serif
+  }
+  

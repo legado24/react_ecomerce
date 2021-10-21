@@ -1,0 +1,28 @@
+.btn {
+    line-height: 25px;
+    display: flex;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 0;
+    font-family: var(--font-family);
+  }
+  .header__button_ingresar {
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0.1;
+    border: solid 1 px var(--border-button);
+    color: var(--white-color);
+    background-color: var(--border-button);
+  }
+
+  @media screen and (max-width: 600px) {
+    .header__button_ingresar {
+        justify-content: center;
+        align-items: center;
+        flex-grow: 0.4;
+        border: solid 1 px var(--border-button);
+        color: var(--white-color);
+        background-color: var(--border-button);
+      }
+  }

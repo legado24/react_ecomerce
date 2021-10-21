@@ -1,0 +1,137 @@
+.header__nav-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .header__nav-desktop {
+    display: none;
+  }
+  /* .header__nav-desktop {
+    display: flex;
+    height: auto;
+  }
+  .header-menu__items {
+    display: flex;
+    flex-grow: 4;
+    flex-wrap: wrap;
+    height: auto;
+  } */
+}
+
+@media screen and (min-width: 1103px) {
+  .header__nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    background: var(--background-menu);
+    position: relative;
+    height: auto;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .header-menu__item-desktop.only {
+    flex-grow: 0.2;
+    height: auto;
+  }
+  .header-menu__items {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .header-menu__item-desktop {
+    position: relative;
+    display: flex;
+
+    flex-direction: column;
+  }
+  .header__menu {
+    color: var(--white-color);
+    font-family: var(--font-family);
+    text-decoration: none;
+    display: flex;
+    height: auto;
+    line-height: 40px;
+    position: relative;
+    font-size: 16px;
+    padding: 0 1rem;
+    align-items: center;
+    background: var(--background-menu);
+
+ 
+  }
+
+  .header__menu.only {
+    background: var(--border-button);
+  }
+
+  .header__menu:hover {
+    background: var(--second-color);
+  }
+  .header__menu.only:hover {
+    background: var(--border-button);
+  }
+
+  /*flecha*/
+  .header__menu.active-navdesk::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: -25px;
+    display: flex;
+    right: 30px;
+    height: 0;
+    border-width: 0 20px 25px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color);
+    
+  }
+
+  .header-menu__drop {
+    background-color: var(--white-color);
+    height: auto;
+    position: absolute;
+    top: 50px;
+     display: none;
+    margin: auto;
+    width: fit-content;
+     /* transition-property: opacity,visibility;
+     transition-duration: .2s;
+     transition-timing-function: ease-out;
+     visibility: hidden;
+    pointer-events: none;
+     opacity: 0; */
+  }
+
+  .active-navdesk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* opacity: 1;
+    visibility: visible;
+    pointer-events: all; */
+    
+  }
+  .middleright {
+    right: 0px;
+    display: flex;
+    transition: all 400ms;
+  }
+
+  .header-menu__drop-colum {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .header-menu__drop-colum > * {
+    list-style: none;
+    color: black;
+    font-size: 10px;
+    width: max-content;
+  }
+}

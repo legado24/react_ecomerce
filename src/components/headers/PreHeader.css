@@ -1,0 +1,32 @@
+
+.pre__header-menu::before {
+    content: "";
+    display: flex;
+    flex-grow: 0.8;
+  }
+  .pre__header-menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-content: 1rem;
+  }
+  .pre__header-menu > a {
+    padding: 0 1rem;
+    line-height: 35px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: var(--font-family);
+  }
+  .pre__header-menu a:hover {
+    background: var(--black-color);
+  }
+  
+  .pre__header {
+    height: 25px;
+    background-color: var(--black-color-secondary);
+    width: 100%;
+  }

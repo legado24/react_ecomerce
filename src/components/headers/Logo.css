@@ -1,0 +1,26 @@
+.header__logo {
+    border-radius: 10%;
+    flex-grow: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  @media screen and (max-width: 1103px) {
+    .header__logo {
+      flex-grow: 1;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .header__logo {
+      margin-left: 1rem;
+      border-radius: 5px;
+      flex-grow: initial;
+    }
+  }
+  

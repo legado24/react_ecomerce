@@ -1,0 +1,25 @@
+.header__button_registrar {
+    outline: none;
+    border: none;
+    border: 0.5px solid var(--border-button);
+    flex-grow: 0.1;
+    background-color: var(--white-color);
+    color: var(--border-button);
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .header__button_registrar {
+        outline: none;
+        border: none;
+        border: 0.5px solid var(--border-button);
+        flex-grow: 0.4;
+        background-color: var(--white-color);
+        color: var(--border-button);
+        justify-content: center;
+        align-items: center;
+      }
+
+  }

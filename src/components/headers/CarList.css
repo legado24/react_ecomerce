@@ -1,0 +1,77 @@
+.header__list-car {
+  /* display: none; */
+  background: white;
+  position: fixed;
+  height: 100vh;
+  width: 500px;
+  top: 0;
+  z-index: 8888;
+  right: 0;
+  bottom: 0;
+  /* opacity: 0; */
+  visibility: hidden;
+  /* transform: translateX(0); */
+  pointer-events: none;
+  animation: slide-out 3s linear;
+}
+
+.active_carlist {
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+
+  /* transform: translateX(900px); */
+  /* transition: all 500ms; */
+  /* animation: slide-in 500ms  linear; */
+  /* animation: slide-in 500ms  linear;  */
+}
+/* @keyframes slide-in {
+    from { 
+        opacity: 0;
+      transform: translate(100%, 0);
+    
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+      visibility: visible;
+     }
+  } */
+
+@keyframes slide-out {
+  from {
+    transform: translate(100%, 0);          
+  }
+  to {
+      visibility: hidden;
+    transform: translate(0, 0);
+  }
+}
+
+.header__icon-close-car {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 36px !important;
+}
+
+.body__scroll {
+  overflow-y: hidden;
+}
+
+.header__empty-car {
+  position: absolute;
+  height: 100px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+@media screen and (min-width: 600px) {
+}
